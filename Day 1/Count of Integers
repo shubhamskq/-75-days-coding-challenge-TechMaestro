@@ -1,0 +1,19 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin >> t;
+	while(t--)
+	{
+		int n,k = 0;
+		cin >> n;
+		for(int i = 1 ; i <= n ; i++)
+		{
+           if(__gcd(i,n) != 1 && __gcd(i,n) != i)
+		         k++;
+		}
+		cout << k << endl;
+	}
+	return 0;
+}
